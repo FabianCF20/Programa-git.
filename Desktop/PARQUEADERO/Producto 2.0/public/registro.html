@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registro de Usuario</title>
+<link rel="shortcut icon" href="/Fotos/logo.ico.ico" type="image/x-icon">
+<link rel="stylesheet" href="/CSS/registro.css">
+</head>
+<body>
+  <a href="/public/index.html"> 
+    <div class="logo" >
+      <img src="/Fotos/Vehiculo copia.PNG" alt="Logo de la Empresa">
+      <h1>SLP</h1>
+  </div>
+  </a>
+<div class="container">
+  <h2>Registro de Usuario</h2>
+  <form action="http://localhost:3000/register" method="post">
+    <div class="form-group">
+      <label for="UserName">Nombre:</label>
+      <input type="text" id="UserName" name="UserName" required>
+    </div>
+    <div class="form-group">
+      <label for="PhoneNumber">Celular:</label>
+      <input type="text" id="PhoneNumber" name="PhoneNumber" required>
+    </div>
+    <div class="form-group">
+      <label for="Plate">Placa de vehiculo:</label>
+      <input type="text" id="Plate" name="Plate" required>
+    </div>
+    <div class="form-group">
+      <label for="contraseña">Contraseña:</label>
+      <input type="password" id="Password" name="Password" required>
+    </div>
+    <button type="submit">Registrarse</button>
+    <a href="/public/iniciarSesion.html">
+      <button type="button">Iniciar Sesion</button>
+    </a>
+  </form> 
+</div>              
+</body>
+</html>

@@ -1,0 +1,156 @@
+.calcularPrecio {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    background-image: url("/Fotos/Fondo de los usables.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    padding: 20px; /* Añade relleno para separar los elementos del borde */
+    color: white; /* Cambia el color del texto a blanco para que sea legible en el fondo */
+}
+
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group select {
+    width: calc(100% - 10px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-group .time-inputs {
+    display: flex;
+    align-items: center;
+}
+
+.input-group .time-inputs input {
+    width: calc(50% - 5px);
+    margin-right: 5px;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+
+
+.InfoGeneral{
+    display: flex; 
+    justify-content:space-between ;
+    border-bottom: 2px solid #ffffff;
+}
+button{
+    height: 20px;
+    background-color: #61af9c;
+    border-radius: 20px;
+    margin-bottom: 3px;
+}
+h2{
+    background-color: aqua;
+    border-radius: 10px;
+}
+.Usable{
+    display: flex;
+    justify-content: space-evenly;  
+    padding-top: 50px;
+}
+img{
+    width: 150px;
+    align-items: center;
+}
+.Parqueo{
+    width: 20%;
+    justify-content:space-between ;   
+    background-image: url(/Fotos/Fondo\ de\ los\ usables.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    align-items: center;
+    color: white;
+}
+
+
+
+body{
+    background-color: #1a1c6d;
+}
+.caclularPresio{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    background-image: url(/Fotos/Fondo\ de\ los\ usables.jpg);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+
+
+.logo {
+    display: block;
+    margin: 0 auto; 
+    text-align: center; 
+    border-radius: 10px;
+}
+
+@media (max-width: 767px) {
+
+    .InfoGeneral{
+        display: flex;
+        justify-content:space-between ;
+        border-bottom: 2px solid #ffffff;
+    }
+    .Usable{
+        display: block;
+    }
+    .BDD{
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    .Parqueo{
+        width: 100%;
+        justify-content:space-between ;   
+        background-image: url(/Fotos/Fondo\ de\ los\ usables.jpg);
+        background-size: cover;
+        border-radius: 10px;
+    }
+    .Chat{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background-image: url(/Fotos/Fondo\ de\ los\ usables.jpg);
+        background-size: cover;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    .Espacio{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        background-image: url(/Fotos/Fondo\ de\ los\ usables.jpg);
+        background-size: cover;
+        border-radius: 10px;
+    }
+  }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Fotos/logo.ico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/CSS/administrador.css">
+    <title>Administrador</title>
+</head>
+<body>
+    <header class="InfoGeneral">
+        <div class="Identidad">
+            <H2> Administrador fabian</H2>
+
+        </div>
+        <button class="Cerrar">Cerrar</button>
+    </header>
+    <main class="Usable">
+        <section class="Parqueo">
+            <img class="logo" src="/Fotos/p.jpg">
+            <div class="ControlIngreso">
+            <button onclick="toggleOpciones1()">Ingreso de Vehiuclos</button>
+            <ul id="opciones1" class="opciones">
+                <form action="factura.html" method="get">
+                    <label for="nombreCliente">Nombre del Cliente:</label><br>
+                    <input type="text" id="nombreCliente" name="nombreCliente"><br>
+
+                    <label for="nombreAdministrador">Nombre del Administrador:</label><br>
+                    <input type="text" id="nombreAdministrador" name="nombreAdministrador"><br>
+
+                    <label for="placaVehiculo">Placa del Vehículo:</label><br>
+                    <input type="text" id="placaVehiculo" name="placaVehiculo"><br>
+                    <input type="submit" value="Generar Factura">
+                </form>
+            </div>
+        </section>
+        <section class="calcularPrecio">
+            <div class="input-group">
+                <label for="fecha-ingreso">Fecha de ingreso:</label>
+                <input type="date" id="fecha-ingreso">
+            </div>        
+            <div class="input-group">
+                <label for="hora-ingreso">Hora de ingreso (formato 24 horas):</label>
+                <div class="time-inputs">
+                    <input type="number" id="hora-ingreso" min="0" max="23" placeholder="Horas">
+                    <input type="number" id="minutos-ingreso" min="0" max="59" placeholder="Minutos">
+                </div>
+            </div>     
+            <div class="input-group">
+                <label for="tipo-vehiculo">Tipo de vehículo:</label>
+                <select id="tipo-vehiculo">
+                    <option value="carro">Carro</option>
+                    <option value="moto">Moto</option>
+                </select>
+            </div>  
+            <button onclick="calcularPrecio()">Calcular Precio</button> 
+            <div id="resultado"></div>
+        </section>
+        
+    </main>
+    <script src="/JS/administrador.js"></script>
+    <script src="/JS/caclularPresio.js"></script>
+</body>
+</html>
